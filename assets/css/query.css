@@ -1,0 +1,44 @@
+/** @format */
+
+@media (max-width: 768px) {
+   .section1-inner-contents,
+   .section2-inner,
+   .first-flex,
+   .second-flex {
+      width: 100%;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .section2,
+   .setion2 .container,
+   .section2-inner {
+      width: 100%;
+      margin: auto;
+   }
+
+   .section1-about-text1,
+   .section1-about-text2 {
+      width: 100%;
+      margin: auto;
+   }
+
+   .section2-text {
+      width: 100%;
+      margin: auto;
+      background: red;
+      overflow: hidden;
+   }
+
+   .section2-text p {
+      width: 100%;
+      margin: 0;
+   }
+   .section1-about-text1 p,
+   .first-flex p,
+   .second-flex p {
+      width: 100%;
+      margin: 20px auto;
+   }
+}

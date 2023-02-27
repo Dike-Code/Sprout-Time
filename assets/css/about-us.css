@@ -1,0 +1,170 @@
+/** @format */
+.hero .about-pg-nav {
+   position: relative !important;
+   background: rgba(74, 216, 74, 0.3) !important;
+}
+
+.hero .about-pg-nav .navbar a {
+   color: #111;
+}
+
+.about,
+.what-we-do {
+   background: rgba(240, 225, 225, 0.3);
+   padding: 100px 0;
+   width: 100%;
+}
+
+.what-we-do {
+   background: #fff;
+}
+
+.about .flex,
+.what-we-do .flex {
+   justify-content: space-between;
+   align-items: stretch;
+   gap: 20px;
+}
+
+.about-title,
+.we-do-title {
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.about-txt,
+.we-do-txt {
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.we-do-content {
+   max-width: 500px;
+}
+
+.about-content .btn-transparent,
+.we-do-content .btn-transparent {
+   color: #111;
+   margin: 10px auto;
+}
+
+.about-img,
+.what-we-do-img {
+   width: 600px;
+   height: 350px;
+}
+
+.says {
+   width: 100%;
+   height: 550px;
+   padding: 100px 0;
+   background: url('../img/handsome-black-man\ 1.png') no-repeat center center;
+   background-size: cover;
+   position: relative;
+}
+
+.says .flex {
+   justify-content: flex-start;
+   align-items: center;
+   height: 100%;
+   position: relative;
+   z-index: 2;
+}
+
+.says .says-content {
+   max-width: 60%;
+}
+
+.says-content .says-title {
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.says-content .says-txt {
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.says .overlay {
+   background: rgba(74, 216, 74, 0.58);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.how-it-works {
+   width: 100%;
+   padding: 100px 0;
+   background: #fff;
+}
+
+.how-it-works .cards {
+   padding: 45px;
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.how-it-works .cards i {
+   color: #4ad84a;
+}
+
+.how-title {
+   font-size: 30px;
+   font-weight: 500;
+}
+.how-txt {
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.monials {
+   width: 100%;
+   padding-top: 45px;
+   background: #d8fab9;
+}
+
+.monials .flex {
+   justify-content: flex-start;
+   align-items: stretch;
+   column-gap: 20px;
+   -webkit-column-gap: 20px;
+}
+
+.simmson-img img {
+   width: 100px;
+   height: 80px;
+   border-radius: 50%;
+}
+
+.monial-content {
+   padding: 45px 0;
+}
+
+.monial-txt {
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.monial-sub-content {
+   background: #74bc31;
+   padding: 45px;
+   height: 200px;
+}
+
+.monial-sub-content .container {
+   position: relative;
+   height: 100%;
+}
+
+.monial-sub-content .cards {
+   position: absolute;
+   max-width: 500px;
+   top: -80px;
+   right: 0;
+   padding: 45px;
+   background: #679f32;
+   color: #fff;
+   font-size: 17px;
+   font-weight: 300;
+   text-align: center;
+}
