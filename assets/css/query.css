@@ -1,44 +1,200 @@
 /** @format */
 
-@media (max-width: 768px) {
-   .section1-inner-contents,
-   .section2-inner,
-   .first-flex,
-   .second-flex {
-      width: 100%;
+@media (max-width: 992px) {
+   .logo-holder {
+      display: none;
+   }
+
+   .navigation .logo {
+      background: #fff;
+      display: block;
+      position: relative;
+      z-index: 999;
+      width: 70px;
+      height: 70px;
+   }
+
+   .toggle {
+      padding: 15px;
+      background: #efefef;
+      cursor: pointer;
+      border-radius: 2px;
+   }
+
+   .toggle .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 5px auto;
+      background: rgba(74, 216, 74, 0.88);
+      position: relative;
+      z-index: 99;
+   }
+
+   .navbar-con {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 250px;
+      height: 1000vh;
+      background: #808080;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      z-index: 99;
+      transition: 0.3s ease;
+   }
+
+   .navbar-con.active {
+      position: fixed;
+      left: 0;
+      width: 250px;
+      height: 1000vh;
+      background: #808080;
+      z-index: 99;
+      transition: 0.3s ease;
+   }
+
+   .navigation .navbar {
       flex-flow: column;
-      justify-content: center;
+      margin-top: 150px;
+   }
+
+   .navbar .nav-item {
+      padding: 30px 0;
+   }
+
+   .navbar .nav-item a {
+      text-decoration: none;
+      padding: 0;
+      color: #fff;
+   }
+   .cli-btn {
+      display: flex;
+      flex-flow: column;
       align-items: center;
    }
 
-   .section2,
-   .setion2 .container,
-   .section2-inner {
+   .academy-page .navbar-con {
+      padding-left: 0;
+   }
+
+   .academy-navbar {
+      background: transparent;
+   }
+}
+
+@media (max-width: 768px) {
+   .home-about .flex,
+   .why .flex,
+   .footer .flex,
+   .about .flex,
+   .what-we-do .flex,
+   .monials .flex,
+   .services .flex,
+   .gif .flex,
+   .program .flex,
+   .signUp-process .flex,
+   .courses .flex {
+      flex-flow: column;
+      align-items: center;
+   }
+
+   .home-about .grid,
+   .newsletter .grid,
+   .how-it-works .grid,
+   .course-form .grid {
+      grid-template-columns: 1fr;
+   }
+
+   .why-img,
+   .about-img,
+   .what-we-do-img,
+   .service-img,
+   .service-img img,
+   .academy-img {
       width: 100%;
+   }
+
+   .hero-content .hero-title {
+      font-size: 2.5rem;
+   }
+
+   .newsletter {
+      height: auto;
+   }
+
+   .news-content,
+   .how-header {
+      width: 100%;
+      text-align: center;
       margin: auto;
    }
 
-   .section1-about-text1,
-   .section1-about-text2 {
-      width: 100%;
-      margin: auto;
+   .says .says-content {
+      max-width: 100%;
    }
 
-   .section2-text {
-      width: 100%;
+   .news-content .app-img,
+   .app-link {
       margin: auto;
-      background: red;
-      overflow: hidden;
+      justify-content: center;
    }
 
-   .section2-text p {
-      width: 100%;
-      margin: 0;
+   .what-we-do-img {
+      order: 2;
    }
-   .section1-about-text1 p,
-   .first-flex p,
-   .second-flex p {
+
+   .form-title {
+      text-align: center;
+   }
+
+   .info-title {
+      text-align: center;
+   }
+
+   .footer-item {
+      padding: 10px 0;
+      text-align: center;
+   }
+
+   .footer-item a {
+      text-align: center;
+   }
+
+   .our-academy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: stretch;
+      padding-top: 45px;
+      min-height: auto;
+   }
+   .our-academy .flex {
       width: 100%;
-      margin: 20px auto;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      top: -250px;
+      padding: 0 20px;
+      justify-content: space-between;
+      gap: 20px;
+      flex-flow: column;
+   }
+
+   .our-acamdemy-content {
+      max-width: 100%;
+      justify-self: flex-start;
+   }
+
+   .pro-quote {
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+   }
+
+   html,
+   body {
+      overflow-x: hidden;
    }
 }

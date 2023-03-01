@@ -12,7 +12,7 @@
 .services .container {
    width: 100%;
    position: relative;
-   z-index: 2;
+   z-index: 1;
    background: #fff;
    padding: 100px 20px;
 }

@@ -1,8 +1,264 @@
+/** @format */
 
+.academy-page {
+  width: 100%;
+  height: 500px !important;
+  background: url('../img/Rectangle\ 24.png') no-repeat;
+  background-size: cover;
+  background-position: 250px;
+}
 
-.academy-page{
-    width: 100%;height: 500px !important;
-    background: url("../img/Rectangle\ 24.png") no-repeat;
-    background-size: cover;
-    background-position: 250px ;
+.academy-hero .btn-fill {
+  background: #efefef;
+  color: #111;
+}
+
+.academy-hero .btn-transparent {
+  border: 1px solid #efefef;
+  color: #111;
+}
+/* hero ends */
+/* navbar-starts */
+
+.academy-page .navbar-con {
+  padding-left: 100px;
+}
+
+.academy-navbar {
+  background: #efefef;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+.academy-navbar a {
+  color: #111 !important;
+}
+/* navbar-ends */
+/* our-academy-starts */
+.our-academy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  min-height: 250px;
+}
+.our-academy .flex {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -250px;
+  padding-top: 45px 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.our-acamdemy-content {
+  max-width: 80%;
+  justify-self: flex-start;
+}
+
+.academy-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.academy-txt {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.our-academy .btn-transparent {
+  border: 1px solid #111;
+  color: #111;
+}
+
+.academy-img {
+  width: 650px;
+  height: 350px;
+}
+/* our-academ-enas */
+/* gif-starts */
+.gif {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gif .ezgif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.gif .flex {
+  position: relative;
+  z-index: 1;
+  padding: 45px 20px;
+  justify-content: space-between;
+}
+
+.gif-content-box {
+  width: 100%;
+  max-width: 650px;
+  align-self: flex-start;
+}
+
+.gif-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.gif-txt {
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.gif .btn-transparent {
+  border: 2px solid #fff;
+}
+
+.gif .overlay {
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+/* gif-ends */
+.program {
+  position: relative;
+  background: rgba(74, 216, 74, 0.55);
+  width: 100%;
+  padding: 100px 0;
+}
+
+.program .flex {
+  justify-content: space-between;
+}
+
+.pro-quote {
+  font-size: 42px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 650px;
+}
+
+.pro-title {
+  font-size: 30px;
+  font-weight: 500px;
+}
+
+.pro-txt {
+  font-size: 17px;
+  font-weight: 300px;
+}
+
+.pro-list .pro-items {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* program ends */
+.signUp-process {
+  width: 100%;
+  padding: 100px 0;
+}
+.signUp-process .flex {
+  justify-content: space-between;
+}
+
+.signUp-title {
+  font-size: 30px;
+  font-weight: 500px;
+}
+.signUp-txt {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.signUp-content2 .signUp-txt {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.signUp-content2 {
+  border: 2px solid #111;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px 0;
+}
+
+.sn {
+  display: inline-block;
+  border-bottom: 2px solid #111;
+  color: green;
+  padding: 5px;
+}
+/* sign-up-ends */
+
+/* courses start */
+.courses {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.courses .flex {
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.courses-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.course-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.course-control input {
+  transform: scale(2);
+  margin: 20px 10px 0;
+}
+.course-control label {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.course-form {
+  width: 100%;
+}
+
+.course-form-control,
+.row50,
+.form-control {
+  width: 100%;
+}
+
+.course-form-control input[type='text'],
+.course-form input[type='email'] {
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+  background:#ddd;
+  border: 2px solid pink;
+}
+.course-form-control textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  background:#ddd;
 }

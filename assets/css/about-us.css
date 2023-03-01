@@ -4,6 +4,10 @@
    background: rgba(74, 216, 74, 0.3) !important;
 }
 
+.hero .about-pg-nav .navbar{
+   width: 70%;
+}
+
 .hero .about-pg-nav .navbar a {
    color: #111;
 }
