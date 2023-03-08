@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/query.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      />
     <title>Sprout Global</title>
 </head>
 <body>
@@ -33,9 +37,9 @@
                            <li class="nav-item drop"><a href="test-acedemy.html">Our Academy</a>
                               <div class="dropdown">
                             <ul>
-                                <li>Shool</li>
-                                <li>Lectures</li>
-                                <li>Books</li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="updates.html">Updates</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
                             </ul>
                         </div>
                            </li>
@@ -53,16 +57,49 @@
                      </div>
                 </div>
             </div>
-            <div class="hero-content">
-                <div class="container">
-                    <h1 class="hero-title"><span class="highlight">WE</span> <span class="animated-text"></span></h1>
-                    <p class="hero-txt">
-                        We aim at redefining the experience of everyday poeple on the tech space. From strategic planning to branding, to market and expanding. We are a tour guide to tech destinations. We work with a confedency of technocracts of diverse fields to make this happen
-                    </p>
-                    <a href="construction.html" class="book-us-btn btn-fill">Book Us Today</a>
-                </div>
-                <div class="overlay"></div>
+            <section id="image-carousel" class="splide">
+            <div class="splide__track">
+               <div class="splide__list">
+                  <div class="splide__slide">
+                     <div class="hero-content">
+                     <div class="container">
+                           <h1 class="hero-title"><span class="highlight">WE</span> Represent You</h1>
+                           <p class="hero-txt">
+                           We aim at redefining the experience of everyday poeple on the tech space. From strategic planning to branding, to market and expanding. We are a tour guide to tech destinations. We work with a confedency of technocracts of diverse fields to make this happen
+                           </p>
+                           <a href="construction.html" class="book-us-btn btn-fill">Book Us Today</a>
+                     </div>
+                        <div class="overlay"></div>
+                 </div>
+                  </div>
+                  <div class="splide__slide">
+                     <div class="hero-content hero-con1">
+                     <div class="container">
+                           <h1 class="hero-title"><span class="highlight">WE</span> Help you Grow </h1>
+                           <p class="hero-txt">
+                           We aim at redefining the experience of everyday poeple on the tech space. From strategic planning to branding, to market and expanding. We are a tour guide to tech destinations. We work with a confedency of technocracts of diverse fields to make this happen
+                           </p>
+                           <a href="construction.html" class="book-us-btn btn-fill">Book Us Today</a>
+                     </div>
+                        <div class="overlay"></div>
+                 </div>
+                  </div>
+                  <div class="splide__slide">
+                     <div class="hero-content hero-con2">
+                     <div class="container">
+                           <h1 class="hero-title"><span class="highlight">WE</span> Expose you to the future technology</h1>
+                           <p class="hero-txt">
+                           We aim at redefining the experience of everyday poeple on the tech space. From strategic planning to branding, to market and expanding. We are a tour guide to tech destinations. We work with a confedency of technocracts of diverse fields to make this happen
+                           </p>
+                           <a href="construction.html" class="book-us-btn btn-fill">Book Us Today</a>
+                     </div>
+                        <div class="overlay"></div>
+                 </div>
+                  </div>
+                  
+               </div>
             </div>
+            </section>
         </div>
     </header>
     <!-- navbar-ends -->
@@ -283,5 +320,15 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            function trigger() {
+               
+            }
+
+            trigger()
+         });
+      </script>
 </body>
 </html>

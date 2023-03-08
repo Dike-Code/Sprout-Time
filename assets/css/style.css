@@ -5,493 +5,501 @@
 
 *,
 html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 body {
-  background: rgba(240, 225, 225, 0.3);
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
+   background: rgba(240, 225, 225, 0.3);
+   width: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 15px 0;
-  font-family: 'Inter', sans-serif;
+   margin: 15px 0;
+   font-family: 'Inter', sans-serif;
 }
 
 p {
-  margin: 15px 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
+   margin: 15px 0;
+   font-family: 'Inter', sans-serif;
+   font-weight: 300;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 /* utilities */
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 20px;
 }
 
 .flex {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   justify-content: center;
 }
 
 .card {
-  padding: 45px;
-  box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.3);
-  border-radius: 5px;
+   padding: 45px;
+   box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.3);
+   border-radius: 5px;
 }
 
 .btn-fill {
-  display: inline-block;
-  padding: 15px 45px;
-  background: #4ad84a;
-  text-decoration: none;
-  border: 0;
-  border-radius: 2px;
-  color: #fff;
-  margin: 10px auto;
-  font-weight: 500;
+   display: inline-block;
+   padding: 15px 45px;
+   background: #4ad84a;
+   text-decoration: none;
+   border: 0;
+   border-radius: 2px;
+   color: #fff;
+   margin: 10px auto;
+   font-weight: 500;
 }
 
 .btn-transparent {
-  display: inline-block;
-  padding: 15px 45px;
-  background: transparent;
-  text-decoration: none;
-  border: 2px solid #4ad84a;
-  border-radius: 2px;
-  color: #fff;
-  margin: 10px auto;
-  font-weight: 500;
+   display: inline-block;
+   padding: 15px 45px;
+   background: transparent;
+   text-decoration: none;
+   border: 2px solid #4ad84a;
+   border-radius: 2px;
+   color: #fff;
+   margin: 10px auto;
+   font-weight: 500;
 }
 
 .overlay {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(74, 216, 74, 0.88);
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(74, 216, 74, 0.88);
 }
 
 .cards {
-  padding: 15px;
-  box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.3);
-  border-radius: 5px;
+   padding: 15px;
+   box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.3);
+   border-radius: 5px;
 }
 
 .highlight {
-  color: #4ad84a;
+   color: #4ad84a;
 }
 
 .header {
-  width: 100%;
-  margin: auto;
-  position: relative;
+   width: 100%;
+   margin: auto;
+   position: relative;
 }
 
 .header .logo-holder {
-  width: inherit;
-  background: #fff;
+   width: inherit;
+   background: #fff;
 }
 
 .logo-holder .flex {
-  justify-content: space-between;
+   justify-content: space-between;
 }
 
 .header .logo {
-  width: 100px;
-  height: 80px;
-  border-left: 2px solid #4ad84a;
-  border-radius: 50%;
+   width: 100px;
+   height: 80px;
+   border-left: 2px solid #4ad84a;
+   border-radius: 50%;
 }
 
 .hero {
-  position: relative;
-  margin: auto;
+   position: relative;
+   margin: auto;
 }
 
 .nav-logo {
-  display: none;
+   display: none;
+}
+
+.nav-logo.stick {
+   display:block;
 }
 
 .hero .container {
-  position: relative;
+   position: relative;
 }
 
 .hero .navigation {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  padding: 20px 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  transition: 0.5s ease;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   padding: 20px 0;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   transition: 0.5s ease;
 }
 
 .hero .navigation.sticky {
-  position: fixed;
-  top: 0;
-  background: rgba(0, 0, 0, 0.88);
+   position: fixed;
+   top: 0;
+   background: rgba(0, 0, 0, 0.88);
 }
 
 .navigation .flex {
-  justify-content: space-between;
-  margin: auto;
+   justify-content: space-between;
+   margin: auto;
 }
 
 .navbar-con {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .navigation .navbar {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .navbar .nav-item a {
-  text-decoration: none;
-  padding: 0 60px 0 5px;
-  color: #fff;
-  font-weight: 300;
+   text-decoration: none;
+   padding: 0 60px 0 5px;
+   color: #fff;
+   font-weight: 500;
 }
 
 .drop {
-  position: relative;
+   position: relative;
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%;
-  left: -20px;
-  background: #ddd;
-  padding: 30px 50px;
-  transform: scale(0);
-  transition: 0.5s ease;
-  opacity: 0;
-  border-radius: 5px;
-  /* z-index: -1; */
+   position: absolute;
+   top: 100%;
+   left: -20px;
+   background: #ddd;
+   padding: 30px 50px;
+   transform: scale(0);
+   transition: 0.5s ease;
+   opacity: 0;
+   border-radius: 5px;
+   /* z-index: -1; */
 }
 
 .dropdown ul li {
-  margin: 10px 0;
-  font-size: 17px;
-  font-weight: 300;
-  list-style: none;
+   margin: 10px 0;
+   font-size: 17px;
+   font-weight: 400;
+   list-style: none;
+}
+
+.dropdown ul li a{
+   font-weight:500;
+   color:#3a3636 !important;
 }
 
 .drop:hover .dropdown {
-  transform: scale(1);
-  opacity: 1;
+   transform: scale(1);
+   opacity: 1;
 }
 
 .hero-content {
-  background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
-  no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 700px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
+      no-repeat center center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 700px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hero-con1 {
+   background: url('../img/group-afro-americans-working-together\ 1.png')
+      no-repeat center center !important;
+   background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.hero-con2 {
+   background: url('../img/header-img1.jpeg') no-repeat center center !important;
+   width: 100%;
+   background-size: cover !important;
+   background-attachment: fixed !important;
 }
 
 .hero-content .hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 1s ease;
+   font-size: 3.5rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   transition: all 1s ease;
+   color:#fff;
 }
 
 .hero-content .container {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  text-align: center;
-}
-
-.hero-content .hero-title::after {
-  content: 'Represent you';
-  color: #fff;
-  animation: change-title 20s ease-in 2s infinite;
+   position: relative;
+   z-index: 1;
+   max-width: 800px;
+   text-align: center;
 }
 
 .hero-content .hero-txt {
-  font-size: 17px;
-  font-weight: 300;
-  max-width: 100%;
-  color: #fff;
+   font-size: 17px;
+   font-weight: 300;
+   max-width: 100%;
+   color: #fff;
 }
 
 .hero .overlay {
-  background: rgb(17, 17, 16, 0.55);
-  top: 0;
+   background: rgb(17, 17, 16, 0.55);
+   top: 0;
 }
 
 /* about */
 
 .home-about {
-  padding: 100px 0;
+   padding: 100px 0;
 }
 
 .home-about .flex {
-  justify-content: space-between;
-  justify-content: stretch;
-  gap: 20px;
+   justify-content: space-between;
+   justify-content: stretch;
+   gap: 20px;
 }
 
 .home-about .grid {
-  column-gap: 20px;
-  row-gap: 10px;
+   column-gap: 20px;
+   row-gap: 10px;
 }
 
 .home-about .cards {
-  position: relative;
+   position: relative;
 }
 
 .about-card-icons {
-  position: absolute;
-  top: -5px;
-  left: -10px;
-  width: 50px;
-  opacity: 0.4;
+   position: absolute;
+   top: -5px;
+   left: -10px;
+   width: 50px;
+   opacity: 0.4;
 }
 
 .home-about .about-title {
-  font-size: 30px;
-  font-weight: 500;
+   font-size: 30px;
+   font-weight: 500;
 }
 
 .home-about .about-txt {
-  font-size: 17px;
-  font-weight: 300;
+   font-size: 17px;
+   font-weight: 300;
 }
 
 .home-about .btn-fill {
-  display: block;
-  width: 200px;
-  margin: 35px auto;
-  text-align: center;
+   display: block;
+   width: 200px;
+   margin: 35px auto;
+   text-align: center;
 }
 
 /* why*/
 
 .why {
-  background: #fff;
-  padding: 100px 0;
-  width: 100%;
+   background: #fff;
+   padding: 100px 0;
+   width: 100%;
 }
 
 .why .flex {
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
+   justify-content: space-between;
+   align-items: stretch;
+   gap: 20px;
 }
 
 .why-title {
-  font-size: 30px;
-  font-weight: 500;
+   font-size: 30px;
+   font-weight: 500;
 }
 
 .why-txt {
-  font-size: 17px;
-  font-weight: 300;
+   font-size: 17px;
+   font-weight: 300;
 }
 
 .why-content .btn-transparent {
-  color: #111;
-  margin: 10px auto;
+   color: #111;
+   margin: 10px auto;
 }
 
 .why-img {
-  width: 600px;
-  height: 350px;
+   width: 600px;
+   height: 350px;
 }
 
 .why-img img {
-  border-radius: 10px;
+   border-radius: 10px;
 }
 
 /* newsletter */
 .newsletter {
-  background: url('../img/133665c7b30f3df4418ed2ceccb81e96.jpeg') no-repeat
-  center center;
-  background-size: cover;
-  height: 680px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+   background: url('../img/133665c7b30f3df4418ed2ceccb81e96.jpeg') no-repeat
+      center center;
+   background-size: cover;
+   height: 680px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
 }
 
 .newsletter .overlay {
-  background: rgba(74, 216, 74, 0.88);
+   background: rgba(74, 216, 74, 0.88);
 }
 
 .newsletter .grid {
-  position: relative;
-  width: 100%;
-  justify-content: center;
-  z-index: 1;
+   position: relative;
+   width: 100%;
+   justify-content: center;
+   z-index: 1;
 }
 
 .news-content h3 {
-  font-size: 40px;
-  font-weight: 500;
-  color: #efefef;
+   font-size: 40px;
+   font-weight: 500;
+   color: #efefef;
 }
 .news-content h4 {
-  font-size: 2rem;
-  font-weight: 300;
-  color: #efefef;
+   font-size: 2rem;
+   font-weight: 500;
+   color: #efefef;
 }
 
 .news-content .app {
-  padding-top: 30px;
+   padding-top: 30px;
 }
 
 .news-content .app-img,
 .app-link {
-  width: 300px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+   width: 300px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
 }
 
 .app-img img {
-  border-radius: 5px;
+   border-radius: 5px;
 }
 
 .form-title {
-  font-size: 30px;
-  font-weight: 500;
-  color: #fff;
+   font-size: 30px;
+   font-weight: 500;
+   color: #fff;
 }
 
 .news-form {
-  width: 100%;
-  padding: 5px;
+   width: 100%;
+   padding: 5px;
 }
 
 .form {
-  width: 100%;
+   width: 100%;
 }
 
 .form-control {
-  width: inherit;
-  margin: 10px auto;
+   width: inherit;
+   margin: 10px auto;
 }
 
 .form input[type='text'],
 .form input[type='email'] {
-  width: inherit;
-  padding: 10px;
-  outline: 0;
-  border: 0;
-  border-radius: 5px;
-  background: #efefef;
+   width: inherit;
+   padding: 20px;
+   outline: 0;
+   border: 0;
+   border-radius: 5px;
+   background: #efefef;
 }
 
 .form textarea {
-  width: inherit;
-  height: 150px;
-  background: #efefef;
+   width: inherit;
+   height: 150px;
+   background: #efefef;
+   border: none;
 }
 
 .form input[type='submit'] {
-  background: transparent;
-  border: 2px solid #fff;
+   background: transparent;
+   border: 2px solid #fff;
 }
 /* newsletter ends */
 
 /* footer */
 .footer {
-  width: 100%;
-  padding-top: 50px;
+   width: 100%;
+   padding-top: 50px;
 }
 .footer .flex {
-  width: 100%;
-  justify-content: space-between;
-  align-items: stretch;
+   width: 100%;
+   justify-content: space-between;
+   align-items: stretch;
 }
 
 .footer-logo {
-  width: 100px;
-  height: 100px;
-  border-left: 2px solid #4ad84a;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   width: 100px;
+   height: 100px;
+   border-left: 2px solid #4ad84a;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .footer-nav,
 .socials li {
-  list-style-type: none;
+   list-style-type: none;
 }
 
 .footer-item {
-  padding: 10px 0;
+   padding: 10px 0;
 }
 
 .footer-item a {
-  text-decoration: none;
-  color: #3a3636;
-  font-weight: 300;
+   text-decoration: none;
+   color: #3a3636;
+   font-weight: 400;
 }
 .right {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 50px;
-  background: #fff;
+   width: 100%;
+   padding: 20px 0;
+   margin-top: 50px;
+   background: #fff;
 }
 
 .right .flex {
-  width: 100%;
-  justify-content: space-between;
+   width: 100%;
+   justify-content: space-between;
 }
 
-@keyframes change-title {
-  0% {
-    content: 'Represent you';
-  }
-  50% {
-    content: 'Help you grow';
-  }
-  70% {
-    content: 'Expose you to the future of technology';
-  }
-}
