@@ -19,6 +19,10 @@
       background: #efefef;
       cursor: pointer;
       border-radius: 2px;
+      position: fixed;
+      z-index: 99;
+      top: 25px;
+      right: 20px;
    }
 
    .toggle .bar {
@@ -27,17 +31,15 @@
       height: 3px;
       margin: 5px auto;
       background: rgba(74, 216, 74, 0.88);
-      position: relative;
-      z-index: 99;
    }
 
    .navbar-con {
       position: fixed;
       top: 0;
       left: -300px;
-      width: 250px;
+      width: 300px;
       height: 1000vh;
-      background: #808080;
+      background: rgba(128, 128, 128, 0.5);
       flex-direction: column;
       justify-content: start;
       align-items: center;
@@ -48,9 +50,9 @@
    .navbar-con.active {
       position: fixed;
       left: 0;
-      width: 250px;
+      width: 300px;
       height: 1000vh;
-      background: #808080;
+      background: rgba(0, 0, 0, 0.88);
       z-index: 99;
       transition: 0.3s ease;
    }
@@ -73,6 +75,12 @@
       display: flex;
       flex-flow: column;
       align-items: center;
+   }
+
+   .hero .about-pg-nav .navbar a,
+   .academy-navbar a,
+   .academy-hero .btn-transparent {
+      color: #fff !important;
    }
 
    .academy-page .navbar-con {
@@ -117,7 +125,7 @@
    }
 
    .hero-content .hero-title {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
    }
 
    .newsletter {
@@ -160,6 +168,10 @@
 
    .footer-item a {
       text-align: center;
+   }
+
+   .footer-logo {
+      margin: auto;
    }
 
    .our-academy {
