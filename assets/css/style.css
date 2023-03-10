@@ -167,6 +167,7 @@ img {
 .navigation .flex {
    justify-content: space-between;
    margin: auto;
+   white-space:nowrap;
 }
 
 .navbar-con {
@@ -188,6 +189,10 @@ img {
    padding: 0 60px 0 5px;
    color: #fff;
    font-weight: 500;
+}
+
+.cli-btn{
+   white-space:nowrap;
 }
 
 .drop {
@@ -225,8 +230,7 @@ img {
 }
 
 .hero-content {
-   background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
-      no-repeat center center;
+   background: url('../img/header-img1.jpeg') no-repeat center center;
    background-size: cover;
    background-attachment: fixed;
    width: 100%;
@@ -244,7 +248,8 @@ img {
    background-attachment: fixed !important;
 }
 .hero-con2 {
-   background: url('../img/header-img1.jpeg') no-repeat center center !important;
+    background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
+      no-repeat center center !important;
    width: 100%;
    background-size: cover !important;
    background-attachment: fixed !important;

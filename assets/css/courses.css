@@ -35,6 +35,28 @@
 .graphics,
 .ui_ux,
 .web-dev,
-.mob-dev {
+.dig-mkt {
    background: #efefef;
+}
+.graphics .flex,
+.ui_ux .flex,
+.web-dev .flex,
+.dig-mkt .flex {
+   margin:20px 0;
+}
+
+.graphics .service-txt,
+.ui_ux .service-txt,
+.web-dev .service-txt,
+.dig-mkt .service-txt {
+   list-style: none;
+   font-size: 16px;
+   font-family: 'Inter', sans-serif;
+}
+
+.graphics .btn-transparent,
+.ui_ux .btn-transparent,
+.web-dev .btn-transparent,
+.dig-mkt .btn-transparent{
+    color:black;
 }
