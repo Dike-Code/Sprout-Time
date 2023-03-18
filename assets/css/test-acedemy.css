@@ -8,6 +8,18 @@
    background-position: 250px;
 }
 
+.academy-page .navigation.sticky .btn-transparent{
+   color:#fff !important;
+}
+
+.academy-page .navigation.sticky ul{
+   background:transparent !important;
+}
+
+.academy-page .navigation.sticky ul a{
+   color: #fff !important;
+}
+
 .academy-hero .btn-fill {
    background: #efefef;
    color: #111;
@@ -18,6 +30,7 @@
    color: #111;
 }
 /* hero ends */
+
 /* navbar-starts */
 
 .academy-page .navbar-con {
@@ -28,6 +41,10 @@
    background: #efefef;
    padding: 15px 0;
    border-radius: 5px;
+}
+
+.academy-navbar.change{
+    background:transparent;
 }
 
 .academy-navbar a {
@@ -115,7 +132,7 @@
 
 .gif-content-box {
    width: 100%;
-   max-width: 650px;
+   max-width: 700px;
    align-self: flex-start;
 }
 
@@ -157,7 +174,7 @@
    font-size: 42px;
    font-weight: 500;
    width: 100%;
-   max-width: 650px;
+   max-width:700px;
 }
 
 .pro-title {
@@ -173,6 +190,11 @@
 .pro-list .pro-items {
    font-size: 20px;
    font-weight: 300;
+}
+
+.p-list{
+   width:100%;
+   max-width:400px;
 }
 
 /* program ends */
@@ -191,6 +213,11 @@
 .signUp-txt {
    font-size: 17px;
    font-weight: 500;
+}
+
+.signUp-content2{
+   width:100%;
+   max-width:800px
 }
 
 .signUp-content2 .signUp-txt {

@@ -1,30 +1,40 @@
 /** @format */
 
 .services {
+   width: 100%;
    position: relative;
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   justify-content: center;
-   min-height: 600px;
+   min-height: 400px;
 }
 
 .services .container {
-   width: 100%;
    position: relative;
    z-index: 1;
-   background: #fff;
+   /* background: #fff; */
    padding: 100px 20px;
 }
 
 .services .flex {
-   justify-content: space-between;
-   align-items: stretch;
+   justify-content: center;
+   align-items:center;
+   flex-flow: column;
    gap: 20px;
 }
 
+.service-head{
+   padding: 45px 0;
+   width: 100%;
+}
+
+.service-router{
+   margin-bottom:20px;
+}
+
+.service-router a{
+   text-decoration: none;
+}
+
 .service-content {
-   max-width: 600px;
+   max-width:100%;
 }
 
 .service-title {
@@ -39,14 +49,9 @@
 
 .service-img {
    position: relative;
-   width: 400px;
-   height: 300px;
+   width:100%;
+   height: 600px;
    overflow: hidden;
-}
-
-.service-img img {
-   width: 400px;
-   height: 300px;
 }
 
 .service-img .overlay {
@@ -56,10 +61,9 @@
    width: 100%;
    height: 100%;
    padding: 45px;
-   background: rgba(0, 0, 0, 0.55);
+   background: rgba(0, 0, 0,0.2);
    color: #fff;
-   opacity: 0;
-   transform: translateY(400px);
+   transform: translateY(0);
    transition: 0.5s ease;
    overflow: hidden;
    display: flex;
@@ -68,47 +72,6 @@
    flex-flow: column;
 }
 
-.service-img:hover .overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: rgba(0, 0, 0, 0.55);
-   opacity: 1;
-   transition: 0.5s ease;
-   transform: translateY(0px);
-}
 
-.services .overlay {
-   background: rgba(0, 0, 0, 0.55);
-   top: 0;
-}
-.branding {
-   width: 100%;
-   min-height: 600px;
-   background: url('../img/branding.jpeg') no-repeat center center;
-   background-size: cover;
-   background-attachment: fixed;
-}
-.web-design {
-   width: 100%;
-   min-height: 600px;
-   background: url('../img/coding.jpeg') no-repeat center center;
-   background-size: cover;
-   background-attachment: fixed;
-}
-.marketing {
-   width: 100%;
-   min-height: 600px;
-   background: url('../img/marketing\ 2.jpeg') no-repeat center center;
-   background-size: cover;
-   background-attachment: fixed;
-}
-.academy {
-   width: 100%;
-   min-height: 600px;
-   background: url('../img/marketing.jpeg') no-repeat center center;
-   background-size: cover;
-   background-attachment: fixed;
-}
+
+

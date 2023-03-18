@@ -39,7 +39,7 @@
       left: -300px;
       width: 300px;
       height: 1000vh;
-      background: rgba(128, 128, 128, 0.5);
+      background: rgba(0, 0, 0, 0.88);
       flex-direction: column;
       justify-content: start;
       align-items: center;
@@ -63,18 +63,26 @@
    }
 
    .navbar .nav-item {
-      padding: 30px 0;
+      padding: 10px 0;
+      border-bottom: 2px solid #fff;
+      margin: 30px 0px 0 0;
+      text-align: center;
    }
 
    .navbar .nav-item a {
       text-decoration: none;
       padding: 0;
       color: #fff;
+      text-align: center;
    }
    .cli-btn {
       display: flex;
       flex-flow: column;
       align-items: center;
+   }
+
+   .about-pg-nav .cli-btn :nth-child(2) {
+      color: #fff;
    }
 
    .hero .about-pg-nav .navbar a,
@@ -90,6 +98,15 @@
    .academy-navbar {
       background: transparent;
    }
+
+   .gif {
+      height: auto;
+   }
+
+   .p-list {
+      margin: auto;
+      text-align: center;
+   }
 }
 
 @media (max-width: 768px) {
@@ -103,7 +120,10 @@
    .gif .flex,
    .program .flex,
    .signUp-process .flex,
-   .courses .flex {
+   .courses .flex,
+   .course-desc .flex,
+   .contact .flex,
+   .inquire .flex {
       flex-flow: column;
       align-items: center;
    }
@@ -120,7 +140,9 @@
    .what-we-do-img,
    .service-img,
    .service-img img,
-   .academy-img {
+   .academy-img,
+   .courseDesc-img,
+   .contact-img {
       width: 100%;
    }
 
@@ -139,7 +161,8 @@
       margin: auto;
    }
 
-   .says .says-content {
+   .says .says-content,
+   .inquire-content {
       max-width: 100%;
    }
 

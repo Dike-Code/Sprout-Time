@@ -41,7 +41,7 @@ img {
 /* utilities */
 
 .container {
-   max-width: 1100px;
+   max-width: 1300px;
    margin: 0 auto;
    padding: 0 20px;
 }
@@ -69,7 +69,7 @@ img {
 .btn-fill {
    display: inline-block;
    padding: 15px 45px;
-   background: #4ad84a;
+   background: #74bc31;
    text-decoration: none;
    border: 0;
    border-radius: 2px;
@@ -83,7 +83,7 @@ img {
    padding: 15px 45px;
    background: transparent;
    text-decoration: none;
-   border: 2px solid #4ad84a;
+   border: 2px solid #74bc31;
    border-radius: 2px;
    color: #fff;
    margin: 10px auto;
@@ -95,7 +95,7 @@ img {
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba(74, 216, 74, 0.88);
+   background: rgba(116, 188, 49, 0.88);
 }
 
 .cards {
@@ -105,7 +105,7 @@ img {
 }
 
 .highlight {
-   color: #4ad84a;
+   color: #d3ffaa;
 }
 
 .header {
@@ -126,7 +126,7 @@ img {
 .header .logo {
    width: 100px;
    height: 80px;
-   border-left: 2px solid #4ad84a;
+   border-left: 2px solid #74bc31;
    border-radius: 50%;
 }
 
@@ -140,7 +140,7 @@ img {
 }
 
 .nav-logo.stick {
-   display:block;
+   display: block;
 }
 
 .hero .container {
@@ -167,7 +167,7 @@ img {
 .navigation .flex {
    justify-content: space-between;
    margin: auto;
-   white-space:nowrap;
+   white-space: nowrap;
 }
 
 .navbar-con {
@@ -184,15 +184,20 @@ img {
    align-items: center;
 }
 
-.navbar .nav-item a {
-   text-decoration: none;
-   padding: 0 60px 0 5px;
-   color: #fff;
-   font-weight: 500;
+.navbar .nav-item {
+   border-bottom: 4px solid #fff;
+   margin: 0 60px 0 8px;
 }
 
-.cli-btn{
-   white-space:nowrap;
+.navbar .nav-item a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: 500;
+   padding: 10px 0;
+}
+
+.cli-btn {
+   white-space: nowrap;
 }
 
 .drop {
@@ -219,9 +224,9 @@ img {
    list-style: none;
 }
 
-.dropdown ul li a{
-   font-weight:500;
-   color:#3a3636 !important;
+.dropdown ul li a {
+   font-weight: 500;
+   color: #3a3636 !important;
 }
 
 .drop:hover .dropdown {
@@ -248,7 +253,7 @@ img {
    background-attachment: fixed !important;
 }
 .hero-con2 {
-    background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
+   background: url('../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg')
       no-repeat center center !important;
    width: 100%;
    background-size: cover !important;
@@ -260,7 +265,7 @@ img {
    font-weight: 800;
    text-transform: uppercase;
    transition: all 1s ease;
-   color:#fff;
+   color: #fff;
 }
 
 .hero-content .container {
@@ -361,6 +366,17 @@ img {
    width: 600px;
    height: 350px;
 }
+.why-img::before {
+   content: '';
+   position: absolute;
+   left: -10px;
+   top: -10px;
+   width: 100%;
+   height: 100%;
+   background: #366a05;
+   border-radius: 20px;
+   z-index: -1;
+}
 
 .why-img img {
    border-radius: 10px;
@@ -376,10 +392,6 @@ img {
    align-items: center;
    justify-content: center;
    position: relative;
-}
-
-.newsletter .overlay {
-   background: rgba(74, 216, 74, 0.88);
 }
 
 .newsletter .grid {
@@ -418,8 +430,8 @@ img {
    border-radius: 5px;
 }
 
-.form-title {
-   font-size: 30px;
+.form-txt {
+   font-size: 20px;
    font-weight: 500;
    color: #fff;
 }
@@ -469,7 +481,7 @@ img {
 .footer .flex {
    width: 100%;
    justify-content: space-between;
-   align-items: stretch;
+   align-items:center;
 }
 
 .footer-logo {
@@ -485,6 +497,14 @@ img {
 .footer-nav,
 .socials li {
    list-style-type: none;
+}
+
+.socials {
+   display: flex;
+   justify-content:space-between;
+   align-items:center;
+   width: 200px;
+   margin: 10px 0;
 }
 
 .footer-item {
@@ -507,4 +527,3 @@ img {
    width: 100%;
    justify-content: space-between;
 }
-

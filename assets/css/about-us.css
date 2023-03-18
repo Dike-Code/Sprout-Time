@@ -1,7 +1,13 @@
 /** @format */
 .hero .about-pg-nav {
    position: relative !important;
-   background: rgba(74, 216, 74, 0.3) !important;
+   background:transparent;
+   border-top:3px solid #111;
+   border-bottom: 3px solid #111;
+}
+
+.no-logo .flex{
+   justify-content: end !important;
 }
 
 .hero .about-pg-nav.sticky {
@@ -15,10 +21,14 @@
 }
 
 .hero .about-pg-nav .navbar {
-   width: 70%;
+   width: 60%;
 }
 
 .hero .about-pg-nav .navbar a {
+   color: #111;
+}
+
+.about-pg-nav .cli-btn :nth-child(2){
    color: #111;
 }
 
@@ -31,10 +41,10 @@
 
 .what-we-do {
    background: #fff;
+   text-align: center;
 }
 
-.about .flex,
-.what-we-do .flex {
+.about .flex{
    justify-content: space-between;
    align-items: stretch;
    gap: 20px;
@@ -53,7 +63,7 @@
 }
 
 .we-do-content {
-   max-width: 500px;
+   max-width: 800px;
 }
 
 .about-content .btn-transparent,
@@ -62,14 +72,24 @@
    margin: 10px auto;
 }
 
-.about-img,
-.what-we-do-img {
+.about-img{
    width: 600px;
    height: 350px;
 }
 
-.about-img img,
-.what-we-do-img img{
+.about-img::before{
+   content: "";
+   position: absolute;
+   left: -10px;
+   top: -10px;
+   width:100%;
+   height:100%;
+   background: #366a05;
+   border-radius: 20px;
+   z-index: -1;
+}
+
+.about-img img{
    border-radius:10px;
 }
 
@@ -80,6 +100,12 @@
    background: url('../img/handsome-black-man\ 1.png') no-repeat center center;
    background-size: cover;
    position: relative;
+}
+
+.circle-icon{
+   width:80px;
+   height: 80px;
+   margin: auto;
 }
 
 .says .flex {
@@ -104,13 +130,6 @@
    font-weight: 300;
 }
 
-.says .overlay {
-   background: rgba(74, 216, 74, 0.58);
-   position: absolute;
-   top: 0;
-   left: 0;
-}
-
 .how-it-works {
    width: 100%;
    padding: 100px 0;
@@ -124,7 +143,7 @@
 }
 
 .how-it-works .cards i {
-   color: #4ad84a;
+   color: #74bc31;
 }
 
 .how-title {
